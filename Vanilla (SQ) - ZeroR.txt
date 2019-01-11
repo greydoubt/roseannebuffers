@@ -1,0 +1,44 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.ZeroR 
+Relation:     posture-weka.filters.unsupervised.attribute.StringToWordVector-R1-W1000-prune-rate-1.0-N0-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r\n\t.,;:\'\"()?!"
+Instances:    6000
+Attributes:   3483
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+ZeroR predicts class value: Unclear/Unrelated
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2276               37.9333 %
+Incorrectly Classified Instances      3724               62.0667 %
+Kappa statistic                          0     
+Mean absolute error                      0.3435
+Root mean squared error                  0.4144
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances             6000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.379      1.000    0.550      ?        0.499     0.379     Unclear/Unrelated
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.367     Anti-Roseanne
+                 0.000    0.000    ?          0.000    ?          ?        0.499     0.162     Pro-Roseanne
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.092     Neutral
+Weighted Avg.    0.379    0.379    ?          0.379    ?          ?        0.499     0.313     
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 2276    0    0    0 |    a = Unclear/Unrelated
+ 2200    0    0    0 |    b = Anti-Roseanne
+  974    0    0    0 |    c = Pro-Roseanne
+  550    0    0    0 |    d = Neutral
+
